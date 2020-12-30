@@ -1,6 +1,10 @@
 # vimtraining
 Learn the terminal Kung Fu Step By Step:
 ![logo](vimnoob2.png)
+
+
+
+
 -The Basics Script
 ```
 bash -c "$(wget https://raw.githubusercontent.com/ech1/vimtraining/main/vimtraining.sh -O - 2>/dev/null)"
