@@ -23,22 +23,44 @@ read step
 echo '[+]     K '
 echo '[+]  H   L'
 echo '[+]   J'
-echo '[+] jljljljlj'
-echo '[+] jhjhjhjhj'
-echo '[+] klklklklk'
-echo '[+] khkhkhkhk'
-echo '[+] dd            (delete current line)'
+echo '[+] jljljljlj J(down) L(right)'
+echo '[+] jhjhjhjhj J(down) H(left)'
+echo '[+] klklklklk K(up)   L(right)'
+echo '[+] khkhkhkhk K(up)   h(left)'
+echo '[+] www bbb   (Jump by word forward/backward)'
+read step
+
+echo '[+] dd            (cut current line)'
 echo '[+] jjjjjj'
 echo '[+] p             (paste line deleted)'
+echo '[+] ddp		(swap current line with next line)'
+echo '[+] 3dd		(cut next 3 lines)'
 echo '[+] ddp ddp ddp 	(swap current line with next one)'
 read step
 
 echo '[+] 10yy		(copy the next ten lines)'
 echo '[+] ppppp         (paste it many times)'
-echo '[+] ddp           (swaps line to next line)'
+echo '[+] yyp           (copies line to next line)'
 echo '[+] yyp yyp yyp yyp'
 read step
 
+echo '[+] 3yy 	(copy next 3 lines)'
+echo '[+] 3p	(paste it 3 times)'
+echo '[+] u 	(undo)'
+echo '[+] 3dd 	(cut next 3 lines)'
+echo '[+] 3p	(paste it 3 times)'
+echo '[+] u	(undo)'
+read step
+
+echo '[+] bb ww bb ww 	(move to next/prev word)'
+echo '[+] dw 		(delete next word)'
+echo '[+] 3dw 		(delete next 3 words)'
+echo '[+] p 		(paste)'
+echo '[+] yw		(copy next word)'
+echo '[+] 3yw		(copy next 3 words)'
+echo '[+] p'
+echo '[+] 3dj	(delete down 3 lines)'
+read step
 
 echo '[+] /aa   ENTER   (goto the aa string)'
 echo '[+] n             (goto the next aa string)'
@@ -57,7 +79,8 @@ read step
 
 echo '[+] :%s/aa/123456789/gi   (search for EVERY aa and replace it with 123456789)'
 echo '[+] /123 ENTER nnn        (goto 123 and third occurence)'
-echo '[+] :/123456789/m$        (search for the next line with 789 and Move it to the LAST LINE)'
+#echo '[+] :/123456789/m$        (search for the next line with 789 and Move it to the LAST LINE)'
+#this is a dumb thing to remember ^ 
 echo '[+] G gg G gg G gg        (first last line)'
 echo '[+] g;    (return to last cursor position)'
 read step
@@ -72,11 +95,24 @@ echo '[+] :downarrow    (scroll through last commands)'
 read step
 
 
-echo '[+] VISUAL MODE !! This is where you ditch your IDEs'
+echo '[+] VISUAL MODE'
+echo '[+] v		(enter visual mode)'
+echo '[+] wwwjwww	(select lines and portions of lines)'
+echo '[+] d		(cut)'
+echo '[+] jjp jjp jjp	(godown2 and paste)'
+read step
+
+echo '[+] VISUAL BLOCK MODE '
 echo '[+] CTRL V        (enter visual mode)'
 echo '[+] jjjjll        (go down selecting the beginning of a few lines)'
 echo '[+] d             (delete what you selected)'
 echo '[+] :w /tmp/random2.txt   (save file as random2.txt)'
+read step
+
+echo '[+] VISUAL LINE MODE'
+echo '[+] SHIFT V	(enter visual line mode)'
+echo '[+] jjj		(highlight 3 more lines)'
+echo '[+] 2p		(paste it twice)'
 read step
 
 echo '[+] ^               (goto beginning of line)'
