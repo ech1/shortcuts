@@ -30,9 +30,13 @@ echo '[+] khkhkhkhk'
 echo '[+] dd            (delete current line)'
 echo '[+] jjjjjj'
 echo '[+] p             (paste line deleted)'
+echo '[+] ddp ddp ddp 	(swap current line with next one)'
+read step
+
+echo '[+] 10yy		(copy the next ten lines)'
 echo '[+] ppppp         (paste it many times)'
 echo '[+] ddp           (swaps line to next line)'
-echo '[+] ddpddpddpddpddddddpp'
+echo '[+] yyp yyp yyp yyp'
 read step
 
 
@@ -60,8 +64,8 @@ read step
 
 echo '[+] gg'
 echo '[+] :set nu'
-echo '[+] :10,43>       (indent lines 10 to 43)'
-echo '[+] :5,15>        (indent lines 5 to 15)'
+echo '[+] :10,43>>       (indent lines 10 to 43)'
+echo '[+] :5,15>>        (indent lines 5 to 15)'
 echo '[+] :set nonu'
 echo '[+] :uparrow      (scroll through last commands)'
 echo '[+] :downarrow    (scroll through last commands)'
