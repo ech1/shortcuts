@@ -60,6 +60,7 @@ echo '[+] yw		(copy next word)'
 echo '[+] 3yw		(copy next 3 words)'
 echo '[+] p'
 echo '[+] 3dj	(delete down 3 lines)'
+echo '[+] 3dk   (delete up 3 lines)'
 read step
 
 echo '[+] /aa   ENTER   (goto the aa string)'
@@ -73,7 +74,7 @@ echo '[+] cw hahaha     (change aa to hahaha)'
 echo '[+] ESC           (exit insert mode)'
 echo '[+] cgn           (change the NEXT search match)'
 echo '[+] HAHAHA ESC    (exit insert mode)'
-echo '[+] .. nn .. NN           (repeat last cmd twice and goto next occurence twice)'
+echo '[+] nnn . nn . N  (repeat last cmd twice and goto next occurence twice)'
 echo '[+] uuuuuuuuuuuuu (undo actions)'
 read step
 
@@ -106,7 +107,7 @@ echo '[+] VISUAL BLOCK MODE '
 echo '[+] CTRL V        (enter visual mode)'
 echo '[+] jjjjll        (go down selecting the beginning of a few lines)'
 echo '[+] d             (delete what you selected)'
-echo '[+] :w /tmp/random2.txt   (save file as random2.txt)'
+echo '[+] :w! /tmp/random2.txt   (save file as random2.txt)'
 read step
 
 echo '[+] VISUAL LINE MODE'
