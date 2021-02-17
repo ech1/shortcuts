@@ -1,0 +1,35 @@
+#!/bin/bash
+GREEN="\033[0;32m"
+NC="\033[0m"
+
+printf "${GREEN} [+] ${NC} The modkey is either the windows key or the altkey, check your i3 config for that \n"
+printf "${GREEN} [+] ${NC}  check out my i3config here:  \n"
+printf "${GREEN} [+] ${NC}  curl https://ech1.github.io/blog/Conf/i3config \n"
+printf "${GREEN} [+] ${NC} Mod+ENTER  		launch a terminal \n"
+printf "${GREEN} [+] ${NC} Mod+arrows	 	switch focus between windows \n"
+printf "${GREEN} [+] ${NC} Mod+shift+arrows	move the windows around \n"
+sleep $1 ; printf "\n"
+
+printf "${GREEN} [+] ${NC} Mod+123456789	goto workspaces \n"
+printf "${GREEN} [+] ${NC} Mod+Shift+123456789  move window to workspace \n"
+printf "${GREEN} [+] ${NC} Mod+d alac enter	open the alacritty terminal from dmenu/drun/rofi \n"
+printf "${GREEN} [+] ${NC} Mod+f		toggle fullscreen \n"
+printf "${GREEN} [+] ${NC} Mod+q 		kill the focused window \n"
+sleep $1 ; printf "\n"
+
+printf "${GREEN} [+] ${NC}  Mod+v		split vertically\n"
+printf "${GREEN} [+] ${NC}  Mod+h		split horizontally\n"
+printf "${GREEN} [+] ${NC}  Mod+enter		open terminal and see how it got split\n"
+printf "${GREEN} [+] ${NC}  Mod+Shift+r		reload the i3 config\n"
+sleep $1 ; printf "\n"
+
+printf "${GREEN} [+] ${NC}  Mod+space 		put the focused window into floating mode\n"
+printf "${GREEN} [+] ${NC}  Mod+r arrows	enter resize mode and then resizing with arrows\n"
+printf "${GREEN} [+] ${NC}  ESC			exit the resize mode\n"
+printf "${GREEN} [+] ${NC}  Mod+Ctrl+left/right	goto next/previous workspace\n"
+sleep $1 ; printf "\n"
+
+printf "${GREEN} [+] ${NC}  Mod+s	Stacking layout\n"
+printf "${GREEN} [+] ${NC}  Mod+w	tabbed layout\n"
+printf "${GREEN} [+] ${NC}  Mod+e	split default layout\n"
+sleep $1 ; printf "\n"

@@ -8,19 +8,23 @@ read de
 
 
 printf "${GREEN} [+] ${YELLOW} i3	${NC}  \n"
+./i3.sh $de
 sleep $de
 
 printf "${GREEN} [+] ${YELLOW} tmux	${NC}  \n"
-sleep $de
-
-printf "${GREEN} [+] ${YELLOW} vim	${NC}  \n"
-./vimtraining.sh $de
-./vimtraining2.sh
-./vimtraining3.sh
+./tmux.sh $de
 sleep $de
 
 printf "${GREEN} [+] ${YELLOW} firefox	${NC}  \n"
+./firefox.sh $de
 sleep $de
 
 printf "${GREEN} [+] ${YELLOW} remmina	${NC}  \n"
 sleep $de
+
+printf "${GREEN} [+] ${YELLOW} vim	${NC}  \n"
+./vimtraining.sh $de
+./vimtraining2.sh $de
+./vimtraining3.sh $de
+sleep $de
+
